@@ -1,0 +1,109 @@
+body {
+  background-color: #333;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0; }
+
+.header {
+  padding: 20px 50px;
+  width: 80%;
+  margin: 200px auto 0;
+  background-color: white;
+  border-radius: 20px; }
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; }
+    .header__navbar a {
+      transition: all 0.5s;
+      display: inline-block;
+      color: black;
+      font-size: 60px;
+      text-decoration: none;
+      z-index: 3; }
+      .header__navbar a i {
+        display: inline-block;
+        z-index: 3; }
+  .header__circle {
+    transition: all 0.5s;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50px;
+    outline: 10px solid #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25px, -80px);
+    opacity: 0;
+    visibility: 0; }
+  .header__item--1:focus ~ .header__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 0; }
+  .header__item--2:focus ~ .header__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 23.7%; }
+  .header__item--3:focus ~ .header__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 47.8%; }
+  .header__item--4:focus ~ .header__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 71.5%; }
+  .header__item--5:focus ~ .header__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 95.4%; }
+  .header__item--1:focus, .header__item--2:focus, .header__item--3:focus, .header__item--4:focus, .header__item--5:focus {
+    transform: translateY(-60px); }
+  .header__navbar--name {
+    transition: all 0.5s;
+    position: absolute;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden; }
+    .header__navbar--name--1 {
+      top: 80px;
+      left: 0; }
+    .header__navbar--name--2 {
+      top: 80px;
+      left: 23.7%; }
+    .header__navbar--name--3 {
+      top: 80px;
+      left: 47.8%; }
+    .header__navbar--name--4 {
+      top: 80px;
+      left: 71.5%; }
+    .header__navbar--name--5 {
+      top: 80px;
+      left: 95.4%; }
+  .header__item--1:focus ~ .header__navbar--name--1 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px; }
+  .header__item--2:focus ~ .header__navbar--name--2 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px; }
+  .header__item--3:focus ~ .header__navbar--name--3 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px; }
+  .header__item--4:focus ~ .header__navbar--name--4 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px; }
+  .header__item--5:focus ~ .header__navbar--name--5 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px; }

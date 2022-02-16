@@ -1,0 +1,141 @@
+body {
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+
+.header {
+  padding: 20px 50px;
+  width: 80%;
+  margin: 200px auto 0;
+  background-color: white;
+  border-radius: 20px;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    a {
+      transition: all 0.5s;
+      display: inline-block;
+      color: black;
+      font-size: 60px;
+      text-decoration: none;
+      z-index: 3;
+
+      i {
+        display: inline-block;
+        z-index: 3;
+      }
+    }
+  }
+  &__circle {
+    transition: all 0.5s;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50px;
+    outline: 10px solid #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25px, -80px);
+    opacity: 0;
+    visibility: 0;
+  }
+  &__item--1:focus ~ &__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  &__item--2:focus ~ &__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 23.7%;
+  }
+
+  &__item--3:focus ~ &__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 47.8%;
+  }
+  &__item--4:focus ~ &__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 71.5%;
+  }
+  &__item--5:focus ~ &__circle {
+    opacity: 1;
+    visibility: visible;
+    left: 95.4%;
+  }
+  &__item--1:focus,
+  &__item--2:focus,
+  &__item--3:focus,
+  &__item--4:focus,
+  &__item--5:focus {
+    transform: translateY(-60px);
+  }
+
+  &__navbar--name {
+    transition: all 0.5s;
+    position: absolute;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    &--1 {
+      top: 80px;
+      left: 0;
+    }
+    &--2 {
+      top: 80px;
+      left: 23.7%;
+    }
+    &--3 {
+      top: 80px;
+      left: 47.8%;
+    }
+    &--4 {
+      top: 80px;
+      left: 71.5%;
+    }
+    &--5 {
+      top: 80px;
+      left: 95.4%;
+    }
+  }
+  &__item--1:focus ~ &__navbar--name--1 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+  }
+  &__item--2:focus ~ &__navbar--name--2 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+  }
+
+  &__item--3:focus ~ &__navbar--name--3 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+  }
+  &__item--4:focus ~ &__navbar--name--4 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+  }
+  &__item--5:focus ~ &__navbar--name--5 {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+  }
+}
