@@ -7,7 +7,7 @@ p {
   margin: 0; }
 
 .header {
-  padding: 20px 50px;
+  padding: 20px 60px;
   width: 80%;
   margin: 200px auto 0;
   background-color: white;
@@ -39,7 +39,29 @@ p {
     left: 0;
     transform: translate(-25px, -80px);
     opacity: 0;
-    visibility: 0; }
+    visibility: hidden; }
+  .header__circle::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: 50%;
+    left: -1rem;
+    transform: translate(-40%, 57%);
+    border-top-right-radius: 15px;
+    box-shadow: 5px -5px #333333; }
+  .header__circle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: 50%;
+    right: -2rem;
+    transform: translate(-40%, 51%);
+    border-top-left-radius: 17px;
+    box-shadow: -5px -2px #333333; }
   .header__item--1:focus ~ .header__circle {
     opacity: 1;
     visibility: visible;

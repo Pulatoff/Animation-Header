@@ -8,7 +8,7 @@ p {
 }
 
 .header {
-  padding: 20px 50px;
+  padding: 20px 60px;
   width: 80%;
   margin: 200px auto 0;
   background-color: white;
@@ -45,7 +45,31 @@ p {
     left: 0;
     transform: translate(-25px, -80px);
     opacity: 0;
-    visibility: 0;
+    visibility: hidden;
+  }
+  &__circle::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    left: -1rem;
+    transform: translate(-40%, 57%);
+    border-top-right-radius: 15px;
+    box-shadow: 5px -5px rgba($color: #333, $alpha: 1);
+  }
+  &__circle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    right: -2rem;
+    transform: translate(-40%, 51%);
+    border-top-left-radius: 17px;
+    box-shadow: -5px -2px rgba($color: #333, $alpha: 1);
   }
   &__item--1:focus ~ &__circle {
     opacity: 1;
